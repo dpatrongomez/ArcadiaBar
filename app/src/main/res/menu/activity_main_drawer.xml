@@ -11,7 +11,7 @@
     <item android:title="Juegos">
         <menu>
             <item
-                android:id="@+id/nav_share"
+                android:id="@+id/cara"
                 android:icon="@drawable/ic_face_black_24dp"
                 android:title="Cara o Cruz" />
         </menu>
