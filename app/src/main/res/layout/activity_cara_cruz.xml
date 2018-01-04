@@ -16,7 +16,9 @@
         android:text="Girar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/moneda" />
+        app:layout_constraintTop_toBottomOf="@+id/moneda"
+        android:background="@android:color/black"
+        android:textColor="@android:color/white"/>
 
     <ImageView
         android:id="@+id/moneda"
