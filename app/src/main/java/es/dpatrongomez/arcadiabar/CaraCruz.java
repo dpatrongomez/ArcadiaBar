@@ -2,10 +2,12 @@ package es.dpatrongomez.arcadiabar;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.Gravity;
 import android.view.View;
 import android.view.animation.RotateAnimation;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import java.util.Random;
 
@@ -25,9 +27,9 @@ public class CaraCruz extends AppCompatActivity {
         setContentView(R.layout.activity_cara_cruz);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        girar = (Button) findViewById(R.id.girar);
+        girar = findViewById(R.id.girar);
 
-        moneda = (ImageView) findViewById(R.id.moneda);
+        moneda = findViewById(R.id.moneda);
 
         r = new Random();
 
@@ -38,8 +40,14 @@ public class CaraCruz extends AppCompatActivity {
 
                 if (monedalado == 0){
                     moneda.setImageResource(R.drawable.cara);
+                    Toast toast = Toast.makeText(CaraCruz.this, "CARA", Toast.LENGTH_SHORT);
+                    toast.setGravity(Gravity.CENTER_VERTICAL, 0,400);
+                    toast.show();
                 } else if (monedalado== 1){
                     moneda.setImageResource(R.drawable.cruz);
+                    Toast toast = Toast.makeText(CaraCruz.this, "CRUZ", Toast.LENGTH_SHORT);
+                    toast.setGravity(Gravity.CENTER_VERTICAL, 0,400);
+                    toast.show();
                 }
 
                 RotateAnimation rotate = new RotateAnimation(0, 360,
