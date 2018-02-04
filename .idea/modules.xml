@@ -3,9 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ArcadiaBar.iml" filepath="$PROJECT_DIR$/ArcadiaBar.iml" />
-      <module fileurl="file://C:\Users\Sobremesa\Documents\GitHub\ArcadiaBar\ArcadiaBar.iml" filepath="C:\Users\Sobremesa\Documents\GitHub\ArcadiaBar\ArcadiaBar.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://C:\Users\Sobremesa\Documents\GitHub\ArcadiaBar\app\app.iml" filepath="C:\Users\Sobremesa\Documents\GitHub\ArcadiaBar\app\app.iml" />
     </modules>
   </component>
 </project>

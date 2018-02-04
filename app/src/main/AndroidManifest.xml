@@ -22,7 +22,7 @@
         <activity
             android:name=".CaraCruz"
             android:label="Cara o Cruz"
-            android:parentActivityName="es.dpatrongomez.arcadiabar.MainActivity"/>
+            android:parentActivityName="es.dpatrongomez.arcadiabar.MainActivity" />
     </application>
 
 </manifest>

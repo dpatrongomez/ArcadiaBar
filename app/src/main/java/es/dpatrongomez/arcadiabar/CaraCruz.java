@@ -13,12 +13,7 @@ import java.util.Random;
 
 public class CaraCruz extends AppCompatActivity {
 
-    Button girar;
-
-    ImageView moneda;
-
     Random r;
-
     int monedalado; // 0 = Cara 1 = Cruz
 
     @Override
@@ -27,9 +22,9 @@ public class CaraCruz extends AppCompatActivity {
         setContentView(R.layout.activity_cara_cruz);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        girar = findViewById(R.id.girar);
+        Button girar = findViewById(R.id.girar);
 
-        moneda = findViewById(R.id.moneda);
+        final ImageView moneda = findViewById(R.id.moneda);
 
         r = new Random();
 
@@ -38,15 +33,15 @@ public class CaraCruz extends AppCompatActivity {
             public void onClick(View view) {
                 monedalado = r.nextInt(2);
 
-                if (monedalado == 0){
+                if (monedalado == 0) {
                     moneda.setImageResource(R.drawable.cara);
                     Toast toast = Toast.makeText(CaraCruz.this, "CARA", Toast.LENGTH_SHORT);
-                    toast.setGravity(Gravity.CENTER_VERTICAL, 0,400);
+                    toast.setGravity(Gravity.CENTER_VERTICAL, 0, 400);
                     toast.show();
-                } else if (monedalado== 1){
+                } else if (monedalado == 1) {
                     moneda.setImageResource(R.drawable.cruz);
                     Toast toast = Toast.makeText(CaraCruz.this, "CRUZ", Toast.LENGTH_SHORT);
-                    toast.setGravity(Gravity.CENTER_VERTICAL, 0,400);
+                    toast.setGravity(Gravity.CENTER_VERTICAL, 0, 400);
                     toast.show();
                 }
 
