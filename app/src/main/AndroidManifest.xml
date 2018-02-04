@@ -23,6 +23,10 @@
             android:name=".CaraCruz"
             android:label="Cara o Cruz"
             android:parentActivityName="es.dpatrongomez.arcadiabar.MainActivity" />
+        <activity
+            android:name=".LaBotella"
+            android:label="Girar La Botella"
+            android:parentActivityName="es.dpatrongomez.arcadiabar.MainActivity" />
     </application>
 
 </manifest>

@@ -13,6 +13,10 @@
                 android:id="@+id/cara"
                 android:icon="@drawable/ic_face_black_24dp"
                 android:title="Cara o Cruz" />
+            <item
+                android:id="@+id/botella"
+                android:icon="@drawable/ic_bottle"
+                android:title="Girar La Botella" />
         </menu>
     </item>
 
